@@ -4,6 +4,7 @@ export default {
     overview: 'Overview',
     inventory: 'Inventory',
     orders: 'Orders',
+    restocking: 'Restocking',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
     companyName: 'Catalyst Components',
@@ -106,12 +107,14 @@ export default {
     title: 'Orders',
     description: 'View and manage customer orders',
     allOrders: 'All Orders',
+    submittedOrders: 'Submitted Orders',
     totalOrders: 'Total Orders',
     totalRevenue: 'Total Revenue',
     avgOrderValue: 'Avg Order Value',
     onTimeDelivery: 'On-Time Delivery',
     itemsCount: '{count} items',
     quantity: 'Qty',
+    days: 'days',
     table: {
       orderNumber: 'Order Number',
       orderId: 'Order ID',
@@ -123,9 +126,35 @@ export default {
       items: 'Items',
       value: 'Value',
       totalValue: 'Total Value',
+      totalCost: 'Total Cost',
       status: 'Status',
+      leadTime: 'Lead Time',
       expectedDelivery: 'Expected Delivery',
       actualDelivery: 'Actual Delivery'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Set a budget and restock the forecasted items that matter most',
+    availableBudget: 'Available Budget',
+    recommended: 'Recommended Restock',
+    recommendedCount: '{count} items recommended',
+    estimatedCost: 'Estimated Cost',
+    remainingBudget: 'Remaining Budget',
+    placeOrder: 'Place Order',
+    placingOrder: 'Placing order...',
+    orderPlaced: 'Restocking order {orderNumber} submitted successfully',
+    noSelection: 'Select at least one item to place an order',
+    table: {
+      sku: 'SKU',
+      itemName: 'Item Name',
+      trend: 'Trend',
+      forecastedDemand: 'Forecasted Demand',
+      unitCost: 'Unit Cost',
+      lineCost: 'Restock Cost',
+      include: 'Include'
     }
   },
 
@@ -204,6 +233,7 @@ export default {
     shipped: 'Shipped',
     processing: 'Processing',
     backordered: 'Backordered',
+    submitted: 'Submitted',
     inStock: 'In Stock',
     lowStock: 'Low Stock',
     adequate: 'Adequate'
